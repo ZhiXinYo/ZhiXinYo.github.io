@@ -1,8 +1,3 @@
-//创建：构造函数、析构函数、拷贝构造函数、赋值运算
-//其他函数功能：获取字符串长度、获取字符串中指定位置的字符、
-//              根据字符获取在字符串中的位置、字符串对象判空、
-//				char*,char[]转换为string、int转string、
-//				索子串、插入、替换、交换、比较、赋值等。
 #pragma warning(disable:4996)
 #ifndef STRING_H
 #define STRING_H
@@ -53,8 +48,5 @@ public:
     //重载io流运算符
     friend ostream& operator<<(ostream& out, const String& s);   //重载运算符>>
     friend istream& operator>>(istream& in, String& s);          //重载运算符<<
-    
-    //friend istream& getline(istream& in, String& s, int num, char delim = '\n');
-    //String& trim();
 };
 #endif
